@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:simulador_financiamento/widgets/VeiculoWidget.dart';
 
 class CaminhaoWidget extends VeiculoWidget {
-  final String capacidadeCarga;
+  final int capacidadeCarga;
 
   const CaminhaoWidget({
     super.key,
@@ -53,7 +53,7 @@ class CaminhaoWidget extends VeiculoWidget {
                 Text(descricao),
                 Column(
                   children: [
-                    Text("Capacidade carga: $capacidadeCarga"),
+                    Text("Capacidade carga: $capacidadeCarga toneladas"),
                   ],
                 ),
               ],

@@ -1,0 +1,2 @@
+C:/Users/migue/Desktop/Escola/Framework/simuladorFinanciamento/simulador_financiamento/android/app/.cxx/Debug/f376h6y4/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/migue/Desktop/Escola/Framework/simuladorFinanciamento/simulador_financiamento/android/app/.cxx/Debug/f376h6y4/armeabi-v7a/CMakeFiles/rebuild_cache.dir
