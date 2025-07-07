@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:simulador_financiamento/widgets/VeiculoWidget.dart';
+import 'package:simulador_financiamento/widgets/veiculo_widget.dart';
 
-class CaminhaoWidget extends VeiculoWidget {
-  final int capacidadeCarga;
+class MotoWidget extends VeiculoWidget {
+  final String tamanhoRoda;
 
-  const CaminhaoWidget({
+  const MotoWidget({
     super.key,
     required super.nome,
     required super.preco,
     required super.descricao,
     required super.imagemUrl,
     required super.onTap,
-    required this.capacidadeCarga,
+    required this.tamanhoRoda,
   });
 
   @override
@@ -20,7 +20,7 @@ class CaminhaoWidget extends VeiculoWidget {
         child: InkWell(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: 230,
         width: 400,
         decoration: BoxDecoration(
             color: Colors.grey[300],
@@ -40,23 +40,25 @@ class CaminhaoWidget extends VeiculoWidget {
         child: Row(
           children: [
             imagemUrl,
-            Column(
-              children: [
-                Text(
-                  nome,
-                  style: TextStyle(fontSize: 30),
-                ),
-                Text(
-                  "R\$${preco.toStringAsFixed(2)}",
-                  style: TextStyle(fontSize: 25),
-                ),
-                Text(descricao),
-                Column(
-                  children: [
-                    Text("Capacidade carga: $capacidadeCarga toneladas"),
-                  ],
-                ),
-              ],
+            Expanded(
+              child: Column(
+                children: [
+                  Text(
+                    nome,
+                    style: TextStyle(fontSize: 25),
+                  ),
+                  Text(
+                    "R\$${preco.toStringAsFixed(2)}",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                  Text(descricao),
+                  Column(
+                    children: [
+                      Text("Tamanho da roda: $tamanhoRoda"),
+                    ],
+                  ),
+                ],
+              ),
             )
           ],
         ),
